@@ -8,154 +8,186 @@
     <title>Home - GameMania</title>
     <link rel="stylesheet" href="CSS/style.css"> 
 </head>
-<body>
+<body >
     <header>
-        <div class="container-grid">
-            <a href=""><img src="img/LOGO.jpg" alt="Logo do site"></a>
-        <div class="pesquisa">
-            <input type="text" class="search-text" placeholder="Digite aqui...">
-            <a class="botao-pesq">
-                <img class="lupa-azul" src="img/loupe-blue.svg" alt="" width="25px" height="25px">
-                <img class="lupa-branca" src="img/loupe-white.svg" alt="" width="25px" height="25px">
-            </a>
-        </div>
-            <nav class="menu">
-            <a href="">Home</a>
-            <a href="">Carrinho</a>
-            <a href="">Login</a>
-            <a href="">Menu</a>
+        <div class="container-header">
+            <div class="logo">
+              <a href="index.html"><img src="img/LOGO.png"  alt="Monte seu setup"></a>
+            </div>
+
+            <nav id="menu" class="menu">
+             <a href="#">Home</a>
+             <a href="#">Carrinho</a>
+             <a href="#">Login</a>
+             <a href="#">Menu</a>
             </nav>
+
+             <a href="#" onclick="mostrarMenu()" id="barras" ><img class="barras" src="img/bars-solid.svg" alt="menu de barras"></a>
+         
         </div>
     </header>
+<Section class="container-Banner">
 
-    <div class="banner">
-        <div class="container-grid posicao-texto">
-        <div class="texto-banner">
-            <h1>"Eu não nasci gamer, foi essa vida que me escolheu"</h1>
-            <p>Confira nossos destaques</p>
-            <a href="">Clique aqui</a>
-        </div>
-        </div>
+    <div id="carrosel" class="carrosel">
+        <img src="img/Nbanner.jpg" alt="Banner Mosaico">
+        <img src="img/Assassins-Creed banner Carossel.jpg" alt="Banner Assassins-Creed">
+        <img src="img/Fifa-Banner.jpg" alt="Banner Fifa">
+        <img src="img/The Witcher Carrosel.jpg" alt="Banner The Witcher">
+        <img src="img/Sonic Mania Carrosel .jpg" alt="Banner Sonic Mania">
     </div>
 
-    <div class= "promocoes">
-        <div class="texto-promo">
-            <a href="">Confira nossas promoções</a>
-        </div>
+    <div class="txt-banner">
+        <h1>"Eu não escolhi ser Gamer. Eu nasci Gamer"</h1>
+        <p>Novos mundos ao seu alcance</p>
+        <a href="#">Confira</a>
     </div>
 
-    <div class="links">
+</Section>
+
+<section class="container-Promocoes">
+    <div class="promocoes">
+      <a href="#">Promoções</a>
+    </div>
+
+    <div class="container-links">
         <div class="setup">
-        <a href=""><img src="img/nsetup.jpg"  alt="Monte seu setup"></a>
-          <div class="texto-setup">
-           <a href="">Monte seu setup</a>
-          </div>
+          <a href="#"><img src="img/nsetup.jpg"alt="Monte seu setup"></a>
         </div>
+        <div class="setup-txt">
+            <a href="#">Monte Seu Setup</a>
+        </div>
+
         <div class="home">
-        <a href=""><img src="img/nhome.jpg" alt="Home Office"></a>
-           <div class="texto-home">
-               <a href="">Home Office</a>
-           </div>
+          <a href="#"><img src="img/nhome.jpg"alt="Home Office"></a>
         </div>
+        <div class="home-txt">
+            <a href="#">Home Office</a>
+        </div>
+
         <div class="smart">
-        <a href=""><img src="img/nsmart.jpg" alt=""></a>
-           <div class="texto-smart">
-               <a href="">Smart Home</a>
-           </div>
+          <a href="#"><img src="img/nsmart.jpg"alt="Smart Home"></a>
+        </div>
+        <div class="smart-txt">
+            <a href="#">Smart Home</a>
         </div>
     </div>
 
-<div class="divisao">
-   <div class="texto-divisao">
-       <a href="">Departamentos</a>
-   </div>
-</div>
-
-<section class="departamentos">
-    <div class="pc">
-        <a href=""><img src="img/Npcgamer.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-pc">
-            <a href="">Pc Gamer</a>
-        </div>
-    </div>
-    <div class="console">
-        <a href=""><img src="img/Nconsole.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-console">
-            <a href="">Consoles</a>
-        </div>
-    </div>
-    <div class="teclado">
-        <a href=""><img src="img/Ntecladoemouse.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-teclado">
-            <a href="">Teclado e Mouse</a>
-        </div>
-    </div>
-    <div class="hardware">
-        <a href=""><img src="img/Nhardware.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-hardware">
-            <a href="">Hardware</a>
-        </div>
-    </div>
-    <div class="ocuvr">
-        <a href=""><img src="img/Noculosvr.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-ocuvr">
-            <a href="">Óculos Vr</a>
-        </div>
-    </div>
-    <div class="fisicos">
-        <a href=""><img src="img/Njogosfisicos.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-fisicos">
-            <a href="">Jogos Físicos</a>
-        </div>
-    </div>
-    <div class="figure">
-        <a href=""><img src="img/Nactionfigure.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-figure">
-            <a href="">Action Figure</a>
-        </div>
-    </div>
-    <div class="moda">
-        <a href=""><img src="img/Nmoda.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-moda">
-            <a href="">Moda Gamer</a>
-        </div>
-    </div>
-    <div class="celular">
-        <a href=""><img src="img/Ncelular.jpg" alt="Pc-Gamer"></a>
-        <div class="texto-celular">
-            <a href="">Celulares</a>
-        </div>
-    </div>
 </section>
 
- <footer>
-     <div class="rodape">
-         <div class="conteudo-rodape">
-             <div class="esq">
-                 <p>B-Tech Webworks</p>
-             </div>
-             <div class="mei">
-                 <h2>Todos os direitos reservados a Game Mania LTDA</h2>
-                 <h3>CEP 03162-060. Rua Itajaí, Mooca, São Paulo - SP. </h3>
-                 <p>Contato : (11) 98167-2928</p>
-             </div>
-            <div class="dir">
-                <div class="face">
-                 <a href=""><img src="img/face.jpg" alt=""></a>
-                 <a href="">@GameMania</a>
-                </div>
-                <div class="insta">
-                 <a href=""><img src="img/insta.jpg" alt=""></a>
-                 <a href="">@GameMania</a>
-                </div>
-                <div class="zap">
-                 <a href=""><img src="img/zap.jpg" alt=""></a>
-                 <a href="">(11) 98167-2928</a>
-                </div>
-            </div>
-         </div>
-     </div>
- </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+<section class="container-departamentos">
+
+    <div class="divisao">
+        <h2>Departamentos</h2>
+    </div>
+
+    <div class="container-produtos">
+        <div class="pc">
+            <a href="#"><img src="img/Npcgamer.jpg"alt="Pc Gamer"></a>
+        </div>
+        <div class="pc-txt">
+            <a href="#">Pc Gamer</a>
+        </div>
+
+
+        <div class="console">
+            <a href="#"><img src="img/Nconsole.jpg"alt="Console"></a>
+        </div>
+        <div class="console-txt">
+            <a href="#">Console</a>
+        </div>
+
+        <div class="teclado">
+            <a href="#"><img src="img/Ntecladoemouse.jpg"alt="Teclado"></a>
+        </div>
+        <div class="teclado-txt">
+            <a href="#">Teclado Gamer</a>
+        </div>
+
+        <div class="hardware">
+            <a href="#"><img src="img/Nhardware.jpg"alt="Hardware"></a>
+        </div>
+        <div class="hardware-txt">
+            <a href="#">Hardware</a>
+        </div>
+
+        <div class="ocvr">
+            <a href="#"><img src="img/Noculosvr.jpg"alt="Oculos Vr"></a>
+        </div>
+        <div class="ocvr-txt">
+            <a href="#">Oculos Vr</a>
+        </div>
+
+        <div class="fisicos">
+            <a href="#"><img src="img/Njogosfisicos.jpg"alt="Fisicos"></a>
+        </div>
+        <div class="fisicos-txt">
+            <a href="#">Jogos Físicos</a>
+        </div>
+
+        <div class="figure">
+            <a href="#"><img src="img/Nactionfigure.jpg"alt="Figure"></a>
+        </div>
+        <div class="figure-txt">
+            <a href="#">Action Figure</a>
+        </div>
+
+        <div class="moda">
+            <a href="#"><img src="img/Nmoda.jpg"alt="Moda"></a>
+        </div>
+        <div class="moda-txt">
+            <a href="#">Moda Gamer</a>
+        </div>
+
+        <div class="celular">
+            <a href="#"><img src="img/Ncelular.jpg"alt="Celular"></a>
+        </div>
+        <div class="celular-txt">
+            <a href="#">Celular</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <section class="container-rodape">
+        <div class="dir">
+            <p>B-Tech Webworks</p>
+        </div>
+
+        <div class="contato">
+            <h3>Todos os direitos reservados a Game Mania LTDA</h3>
+            <p>CEP 03162-060. Rua Itajaí, Mooca, São Paulo - SP.</p>
+            <a href="(11) 98167-2928">Contato : (11) 98167-2928</a>
+        </div>
+
+        <div class="redes">
+            <a href="@GameMania"><img src="img/face.jpg" alt="Facebook"> @GameMania</a>
+            <a href="@GameMania"><img src="img/insta.jpg" alt="Instagram"> @GameMania</a>
+            <a href="(11) 98167-2928"><img src="img/zap.jpg" alt="Whatsapp"> (11) 98167-2928</a>
+        </div>
+
+    </section>
+</footer>
+
+ <script>
+     let menu = document.getElementById("menu");
+
+     function mostrarMenu(){
+        if(menu.style.display != "flex") {
+             menu.style.display = "flex"
+         } else {
+             menu.style.display = "none"
+         }    
+     }
+ </script>
+
+ <script src="js/jquery-3.6.0.js"></script>
+ <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+     crossorigin="anonymous">
+    </script>    
 </body>
+
 </html>
