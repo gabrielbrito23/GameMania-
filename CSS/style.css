@@ -1,41 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header{
-  height: 100%;
-  background: white;
+    height: 100%;
+    width: 100%;
+    background: white;
 }
 
 .container-header{
-  position: relative;
-  display: flex;
-  height: 30vh;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img{
-  height: 20vh;
-  width: 20vw;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu{
-    right: 0;
-    display: flex;
+    display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10vw;
 }
 
 .menu a{
-  color: #0B6DDF;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+    color: #0B6DDF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
 }
 
 .barras{
@@ -65,7 +60,7 @@ header{
 
 .txt-banner{
     position: absolute;
-    top: 100vh;
+    top: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -223,7 +218,7 @@ header{
 }
 
 .container-produtos{
-    height: 600px;
+    height: 90vh;
     background: #363636;
     position: relative;
     display: flex;
@@ -404,77 +399,74 @@ header{
     font-family:'Roboto', sans-serif;
     font-size: 30px;
 }
+
 footer{
-  height: 100%;
+  width: 100%;
   background: white;
 }
 
 .container-rodape{
-    position: relative;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dir{
-    display: flex;
-    position: relative;
-    top: 50%;
-    left: 0%;
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dir p{
-    font-size: 8px;
-    color: #0B6DDF;
-    text-decoration: none;
-    font-family:'Roboto', sans-serif;
+  margin-top: 18vh;
+  font-size: 8px;
+  color: #0B6DDF;
+  font-family:'Roboto', sans-serif;  ;
 }
 
 .contato{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .contato h3{
-    color: #0B6DDF;
-    font-weight: bold;
-    text-decoration: none;
-    font-family:'Roboto', sans-serif;
+  font-size: 26px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
 }
 
 .contato p{
-    color: #0B6DDF;
-    font-weight: bold;
-    text-decoration: none;
-    font-family:'Roboto', sans-serif;
+  font-size: 14px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
 }
 
 .contato a{
-    color: #0B6DDF;
-    text-decoration: none;
-    font-family:'Roboto', sans-serif;
+  font-size: 12px;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none; 
+  font-weight: bold;
+  color: #0B6DDF;
 }
 
 .redes{
-    display: grid;
-    grid-template-columns: auto;
-    gap: 8px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6px;
 }
 
 .redes img{
-    height:14px;
-    width:14px;
+  height:20px;
+  width:20px;
 }
 
 .redes a{
-    color: #0B6DDF;
-    font-size: 12px;
-    text-decoration: none;
-    font-family:'Roboto', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
 }
+
 
 @media screen and (min-width:1440px){
   .menu{
@@ -491,21 +483,39 @@ footer{
 }
 
 @media screen and (max-width:800px){
-  .container-header{
-    height: 25vh;
-  }
 
-  .logo img{
-    width: 25vw;
-  }
+header{
+  height: 100%;
+  width: 100%;
+  background: white;
+}
 
-  .menu{
-   gap: 8vw;
-  }
+.container-header{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    
+.logo{
+  height: 15vh;
+  width: 20vw;
+}
 
-  .menu a{
-    font-size: 20px;
-  }
+.menu{
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  gap: 10vw;
+}
+    
+.menu a{
+    color: #0B6DDF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 
   #carrosel img{
     height: 400px;
@@ -595,504 +605,687 @@ footer{
     font-size: 18px;
   }
 
-  .dir p{
-    font-size: 8px;
-  }
-
-  .contato h3{
-    font-size: 20px;
-  }
-
-  .contato p{
-    font-size: 14px;
-  }
-
-  .contato a{
-    font-size: 12px;
-  }
-
-  .redes img{
-    height: 12px;
-    width: 12px;
-  }
-
-  .redes a{
-    font-size: 10px;
-  }
+  footer{
+  width: 100%;
+  background: white;
+}
+        
+.container-rodape{
+  position: relative;
+  height: 16vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+        
+.dir p{
+  margin-top: 14vh;
+  font-size: 6px;
+    color: #0B6DDF;
+  font-family:'Roboto', sans-serif;  ;
+}
+        
+.contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+        
+.contato h3{
+  font-size: 10px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+        
+.contato p{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+        
+.contato a{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none; 
+  font-weight: bold;
+  color: #0B6DDF;
+}
+        
+.redes{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6px;
+}
+        
+.redes img{
+  height:8px;
+  width:8px;
+}
+        
+.redes a{
+  font-size: 6px;
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
+}
+    
 }
 @media screen and (max-width:425px){
-   .container-header{
-     height: 15vh;
-   }
 
-   .logo img{
-    height: 12vh;
-   }
+header{
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+        
+.container-header{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    
+.logo{
+  height: 10vh;
+  width: 35vw;
+}
+    
+.menu{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: whitesmoke;
+  right: 15%;
+  gap: 6px;
+}
+        
+.menu a{
+  color: #0B6DDF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+    
+.barras{
+  display:inline-block;
+  cursor: pointer;
+  width: 25px;
+  right: 50%;
+}
 
-   .menu{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background: whitesmoke;
-    right: 15%;
-    gap: 4px;
-   }
+#carrosel img{
+  height:300px ;
+}
 
-   .menu a{
-    font-size: 10px;
-   }
+.txt-banner{
+  top:45vh;
+}
 
-   .barras{
-     display:inline-block;
-     cursor: pointer;
-     width: 30px;
-     right: 50%;
-   }
+.txt-banner h1{
+  font-size: 18px;
+}
 
-   #carrosel img{
-      height:300px ;
-   }
+.txt-banner p{
+  font-size: 14px;
+}
 
-   .txt-banner{
-    top:45vh;
-  }
+.txt-banner a{
+  font-size: 10px;
+}
 
-  .txt-banner h1{
-    font-size: 18px;
-  }
+.promocoes{
+  height: 130px;
+}
 
-  .txt-banner p{
-    font-size: 14px;
-  }
+.promocoes a{
+  font-size: 20px;
+}
 
-  .txt-banner a{
-    font-size: 10px;
-  }
+.setup-txt a{
+  font-size: 12px;
+}
 
-  .promocoes{
-    height: 130px;
-  }
+.home-txt a{
+  font-size: 12px;
+}
 
-  .promocoes a{
-    font-size: 20px;
-  }
+.smart-txt a{
+  font-size: 12px;
+}
 
-  .setup-txt a{
-    font-size: 12px;
-  }
+.divisao{
+  height: 24px;
+}
 
-  .home-txt a{
-    font-size: 12px;
-  }
+.divisao h2{
+  font-size: 18px;
+}
 
-  .smart-txt a{
-    font-size: 12px;
-  }
+.container-produtos{
+  height: 200px;
+}
 
-  .divisao{
-    height: 24px;
-  }
+.pc-txt a{
+  font-size: 12px;
+}
 
-  .divisao h2{
-    font-size: 18px;
-  }
+.console-txt a{
+  font-size: 12px;
+}
 
-  .container-produtos{
-    height: 200px;
-  }
+.teclado-txt a{
+  font-size: 12px;
+}
 
-  .pc-txt a{
-    font-size: 12px;
-  }
+.hardware-txt a{
+  font-size: 12px;
+}
 
-  .console-txt a{
-    font-size: 12px;
-  }
+.ocvr-txt a{
+  font-size: 12px;
+}
 
-  .teclado-txt a{
-    font-size: 12px;
-  }
+.fisicos-txt a{
+  font-size: 12px;
+}
 
-  .hardware-txt a{
-    font-size: 12px;
-  }
+.figure-txt a{
+  font-size: 12px;
+}
 
-  .ocvr-txt a{
-    font-size: 12px;
-  }
+.moda-txt a{
+  font-size: 12px ;
+}
 
-  .fisicos-txt a{
-    font-size: 12px;
-  }
+.celular-txt a{
+  font-size: 12px;
+}
 
-  .figure-txt a{
-    font-size: 12px;
-  }
-
-  .moda-txt a{
-    font-size: 12px ;
-  }
-
-  .celular-txt a{
-    font-size: 12px;
-  }
-
-  .container-rodape{
-    height: 15vh;
-  }
-
-  .dir{
-    top:5vh;
-  }
-
-  .dir p{
-    font-size: 8px;
-  }
-
-  .contato h3{
-    font-size: 12px;
-  }
-
-  .contato p{
-    font-size: 10px;
-  }
-
-  .contato a{
-    font-size: 8px;
-  }
-
-  .redes{
-    gap: 8px;
-  }
-
-  .redes img{
-    height: 10px;
-    width: 10px;
-  }
-
-  .redes a{
-    font-size: 8px;
-  }
+footer{
+  width: 100%;
+  background: white;
+}
+      
+.container-rodape{
+  position: relative;
+  height: 16vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+      
+.dir p{
+  margin-top: 14vh;
+  font-size: 6px;
+  color: #0B6DDF;
+  font-family:'Roboto', sans-serif;  ;
+}
+      
+.contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+      
+.contato h3{
+  font-size: 10px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+      
+.contato p{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+      
+.contato a{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none; 
+  font-weight: bold;
+  color: #0B6DDF;
+}
+      
+.redes{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6px;
+}
+      
+.redes img{
+  height:8px;
+  width:8px;
+}
+      
+.redes a{
+  font-size: 6px;
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
+}
+  
 }
 
 @media screen and (max-width:375px){
-  .container-header{
-    height: 12vh;
-    justify-content: space-between;
-  }
 
-  .logo img{
-   height: 8vh;
-  }
-
-  .menu{
-   display: none;
-   flex-direction: column;
-   position: absolute;
-   background: whitesmoke;
-   right: 15%;
-   gap: 0px;
-  }
-
-  .menu a{
-   font-size: 10px;
-  }
-
-  .barras{
-    display:inline-block;
-    cursor: pointer;
-    width: 20px;
-    right: 50%;
-  }
-
-  #carrosel img{
-     height:250px ;
-  }
-
-  .txt-banner{
-   top: 38vh;
- }
-
- .txt-banner h1{
-   font-size: 14px;
- }
-
- .txt-banner p{
-   font-size: 12px;
- }
-
- .txt-banner a{
-   font-size: 8px;
-   padding: 2px;
-   cursor: pointer;
- }
-
- .promocoes{
-   height: 100px;
- }
-
- .promocoes a{
-   font-size: 16px;
- }
-
- .container-links{
-  height: 12vh;
+header{
+  height: 100%;
+  width: 100%;
+  background: white;
 }
- .setup-txt a{
-   font-size: 10px;
- }
-
- .home-txt a{
-   font-size: 10px;
- }
-
- .smart-txt a{
-   font-size: 10px;
- }
-
- .divisao{
-   height: 18px;
- }
-
- .divisao h2{
-   font-size: 14px;
- }
-
- .container-produtos{
-   height: 180px;
- }
-
- .pc-txt a{
-   font-size: 10px;
- }
-
- .console-txt a{
-   font-size: 10px;
- }
-
- .teclado-txt a{
-   font-size: 10px;
- }
-
- .hardware-txt a{
-   font-size: 10px;
- }
-
- .ocvr-txt a{
-   font-size: 10px;
- }
-
- .fisicos-txt a{
-   font-size: 10px;
- }
-
- .figure-txt a{
-   font-size: 10px;
- }
-
- .moda-txt a{
-   font-size: 10px ;
- }
-
- .celular-txt a{
-   font-size: 10px;
- }
-
- .container-rodape{
-   height: 12vh;
- }
-
- .dir{
-   top:5vh;
- }
-
- .dir p{
-   font-size: 8px;
- }
-
- .contato h3{
-   font-size: 10px;
- }
-
- .contato p{
-   font-size: 8px;
- }
-
- .contato a{
-   font-size: 8px;
- }
-
- .redes{
-   gap: 6px;
- }
-
- .redes img{
-   height: 10px;
-   width: 10px;
- }
-
- .redes a{
-   font-size: 8px;
- }
+        
+.container-header{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@media screen and (max-width:320px){
-  .container-header{
-    height: 12vh;
-    justify-content: space-between;
-  }
+    
+.logo{
+  height: 10vh;
+  width: 35vw;
+}
+    
+.menu{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: whitesmoke;
+  right: 15%;
+  gap: 6px;
+}
+        
+.menu a{
+  color: #0B6DDF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+    
+.barras{
+  display:inline-block;
+  cursor: pointer;
+  width: 25px;
+  right: 50%;
+}
 
-  .logo img{
-   height: 8vh;
-  }
+#carrosel img{
+  height:250px ;
+}
 
-  .menu{
-   display: none;
-   flex-direction: column;
-   position: absolute;
-   background: whitesmoke;
-   right: 15%;
-   gap: 0px;
-  }
+.txt-banner{
+  top: 45vh;
+}
 
-  .menu a{
-   font-size: 10px;
-  }
+.txt-banner h1{
+  font-size: 14px;
+}
 
-  .barras{
-    display:inline-block;
-    cursor: pointer;
-    width: 20px;
-    right: 50%;
-  }
+.txt-banner p{
+  font-size: 12px;
+}
 
-  #carrosel img{
-     height:250px ;
-  }
+.txt-banner a{
+ font-size: 8px;
+  padding: 2px;
+  cursor: pointer;
+}
 
-  .txt-banner{
-   top: 38vh;
- }
+.promocoes{
+  height: 100px;
+}
 
- .txt-banner h1{
-   font-size: 14px;
- }
+.promocoes a{
+  font-size: 16px;
+}
 
- .txt-banner p{
-   font-size: 12px;
- }
-
- .txt-banner a{
-   font-size: 8px;
-   padding: 2px;
-   cursor: pointer;
- }
-
- .promocoes{
-   height: 80px;
- }
-
- .promocoes a{
-   font-size: 14px;
- }
-
- .container-links{
+.container-links{
   height: 10vh;
 }
- .setup-txt a{
-   font-size: 8px;
- }
 
- .home-txt a{
-   font-size: 8px;
- }
+.setup-txt a{
+  font-size: 8px;
+}
 
- .smart-txt a{
-   font-size: 8px;
- }
+.home-txt a{
+  font-size: 8px;
+}
 
- .divisao{
-   height: 18px;
- }
+.smart-txt a{
+  font-size: 8px;
+}
 
- .divisao h2{
-   font-size: 14px;
- }
+.divisao{
+  height: 18px;
+}
 
- .container-produtos{
-   height: 150px;
- }
+.divisao h2{
+  font-size: 14px;
+}
 
- .pc-txt a{
-   font-size: 8px;
- }
+.container-produtos{
+  height: 160px;
+}
 
- .console-txt a{
-   font-size: 8px;
- }
+.pc-txt a{
+  font-size: 8px;
+}
 
- .teclado-txt a{
-   font-size: 8px;
- }
+.console-txt a{
+  font-size: 8px;
+}
 
- .hardware-txt a{
-   font-size: 8px;
- }
+.teclado-txt a{
+  font-size: 8px;
+}
 
- .ocvr-txt a{
-   font-size: 8px;
- }
+.hardware-txt a{
+  font-size: 8px;
+}
 
- .fisicos-txt a{
-   font-size: 8px;
- }
+.ocvr-txt a{
+  font-size: 8px;
+}
 
- .figure-txt a{
-   font-size: 8px;
- }
+.fisicos-txt a{
+  font-size: 8px;
+}
 
- .moda-txt a{
-   font-size: 8px ;
- }
+.figure-txt a{
+  font-size: 8px;
+}
 
- .celular-txt a{
-   font-size: 8px;
- }
+.moda-txt a{
+  font-size: 8px;
+}
 
- .container-rodape{
-   height: 12vh;
- }
+.celular-txt a{
+  font-size: 8px;
+}
 
- .dir{
-   top:4vh;
- }
-
- .dir p{
-   font-size: 6px;
- }
-
- .contato h3{
-   font-size: 8px;
- }
-
- .contato p{
-   font-size: 6px;
- }
-
- .contato a{
-   font-size: 6px;
- }
-
- .redes{
-   gap: 6px;
- }
-
- .redes img{
-   height: 8px;
-   width: 8px;
- }
-
- .redes a{
-   font-size: 6px;
- }
+footer{
+  width: 100%;
+  background: white;
+}
+      
+.container-rodape{
+  position: relative;
+  height: 16vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+      
+.dir p{
+  margin-top: 14vh;
+  font-size: 6px;
+  color: #0B6DDF;
+  font-family:'Roboto', sans-serif;  ;
+}
+      
+.contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+      
+.contato h3{
+  font-size: 10px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+      
+.contato p{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+      
+.contato a{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none; 
+  font-weight: bold;
+  color: #0B6DDF;
+}
+      
+.redes{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6px;
+}
+      
+.redes img{
+  height:8px;
+  width:8px;
+}
+      
+.redes a{
+  font-size: 6px;
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
 }
   
+}
+
+@media screen and (max-width:001px){
+
+header{
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+      
+.container-header{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.logo{
+  height: 10vh;
+  width: 35vw;
+}
+  
+.menu{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background: whitesmoke;
+  right: 15%;
+  gap: 6px;
+}
+      
+.menu a{
+  color: #0B6DDF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+  
+.barras{
+  display:inline-block;
+  cursor: pointer;
+  width: 25px;
+  right: 50%;
+}
+
+#carrosel img{
+  height:250px ;
+}
+
+.txt-banner{
+  top: 38vh;
+}
+
+.txt-banner h1{
+  font-size: 14px;
+}
+
+.txt-banner p{
+  font-size: 12px;
+}
+
+.txt-banner a{
+  font-size: 8px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.promocoes{
+  height: 80px;
+}
+
+.promocoes a{
+  font-size: 14px;
+}
+
+.container-links{
+  height: 10vh;
+}
+.setup-txt a{
+  font-size: 8px;
+}
+
+.home-txt a{
+  font-size: 8px;
+}
+
+.smart-txt a{
+  font-size: 8px;
+}
+
+.divisao{
+  height: 18px;
+}
+
+.divisao h2{
+  font-size: 14px;
+}
+
+.container-produtos{
+  height: 150px;
+}
+
+.pc-txt a{
+  font-size: 6px;
+}
+
+.console-txt a{
+  font-size: 6px;
+}
+
+.teclado-txt a{
+  font-size: 6px;
+}
+
+.hardware-txt a{
+  font-size: 6px;
+}
+
+.ocvr-txt a{
+  font-size: 6px;
+}
+
+.fisicos-txt a{
+  font-size: 6px;
+}
+
+.figure-txt a{
+  font-size: 6px;
+}
+
+.moda-txt a{
+  font-size: 6px ;
+}
+
+.celular-txt a{
+  font-size: 6px;
+}
+
+footer{
+  width: 100%;
+  background: white;
+}
+  
+.container-rodape{
+  position: relative;
+  height: 16vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.dir p{
+  margin-top: 14vh;
+  font-size: 6px;
+  color: #0B6DDF;
+  font-family:'Roboto', sans-serif;  ;
+}
+  
+.contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+  
+.contato h3{
+  font-size: 10px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+  
+.contato p{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;  
+  font-weight: bold;
+  color: #0B6DDF;
+}
+  
+.contato a{
+  font-size: 8px;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none; 
+  font-weight: bold;
+  color: #0B6DDF;
+}
+  
+.redes{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6px;
+}
+  
+.redes img{
+  height:8px;
+  width:8px;
+}
+  
+.redes a{
+  font-size: 6px;
+  text-decoration: none;
+  font-family:'Roboto', sans-serif;
+}
+
+}
